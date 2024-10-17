@@ -10,11 +10,26 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { HttpClientModule } from '@angular/common/http';
+import { TopbarComponent } from './pages/sections/topbar/topbar.component';
+import { SearchBarComponent } from './pages/sections/search-bar/search-bar.component';
+import { HeroSectionComponent } from './pages/sections/hero-section/hero-section.component';
+import { IconSectionComponent } from './pages/sections/icon-section/icon-section.component';
+import { TitleSectionComponent } from './pages/sections/title-section/title-section.component';
+import { ImageSectionComponent } from './pages/sections/image-section/image-section.component';
+import { FooterComponent } from './pages/sections/footer/footer.component';
+import { NzDrawerModule } from 'ng-zorro-antd/drawer';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent
+    HomeComponent,
+    TopbarComponent,
+    SearchBarComponent,
+    HeroSectionComponent,
+    IconSectionComponent,
+    TitleSectionComponent,
+    ImageSectionComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
@@ -22,6 +37,7 @@ import { HttpClientModule } from '@angular/common/http';
     CommonModule,
     FormsModule,
     AppRoutingModule,
+    NzDrawerModule
   ],
   providers: [
     { provide: NZ_I18N, useValue: en_US }

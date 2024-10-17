@@ -1,0 +1,36 @@
+<div class="xl:h-[500px] lg:h-[330px] sm:h-[200px] h-fit bg-[#F1F1F1] flex flex-row z-50">
+  <div class="xs:w-6/12 w-full">
+    <div class="sm:w-10/12 w-full py-4 sm:px-0 px-4 sm:ml-auto flex flex-col gap-3 sm:items-start items-center">
+      <div class="flex flex-row gap-3 w-full">
+        <div class="flex flex-col xl:h-[170px] lg:h-[120px] sm:h-[80px] h-[50px] w-[32%] gap-3 justify-center items-center bg-white  hover:cursor-pointer" *ngFor="let b of row1Icon">
+          <span class="material-symbols-outlined xl:text-4xl lg:text-2xl sm:text-base text-xs text-[#E83223]">
+            {{ b?.iconName }}
+          </span>
+          <span class="xl:text-lg lg:text-sm sm:text-[8px] text-[6px] font-semibold">{{ b?.iconText }}</span>
+        </div>
+      </div>
+      <div class="flex flex-row gap-3 w-full">
+        <div class="flex flex-col xl:h-[170px] lg:h-[120px] sm:h-[80px] h-[50px] w-[32%] gap-3 justify-center items-center bg-white  hover:cursor-pointer" *ngFor="let b of row2Icon">
+          <span class="material-symbols-outlined xl:text-4xl lg:text-2xl sm:text-base text-xs text-[#E83223]">
+            {{ b?.iconName }}
+          </span>
+          <span class="xl:text-lg lg:text-sm sm:text-[8px] text-[6px] font-semibold">{{ b?.iconText }}</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="w-6/12  h-full xs:block hidden">
+    <div class="2xl:pt-16 2xl:px-28 sm:px-10 px-5 justify-center sm:pt-8 pt-4 w-full flex flex-row relative">
+      <img src="../../../assets/packages.webp" alt="" class="2xl:w-6/12 sm::w-5/12 w-6/12 xl:h-[250px] lg:h-[200px] h-[100px]">
+      <div class="flex flex-col xl:gap-6 lg:gap-3 gap-1 2xl:w-6/12 w-5/12 lg:pl-6 pl-3 lg:pr-12 pr-3 2xl:pt-4 lg:pt-2 pt-0.5 bg-white relative border-l z-50">
+        <div class="flex flex-col lg:gap-2 md:gap-0.5">
+          <span class="xl:text-3xl lg:text-xl md:text-base sm:text-sm text-[10px] font-semibold">Heading</span>
+          <span class="xl:text-2xl lg:text-lg md:text-xs sm:text-[10px] text-[8px]">Subheading</span>
+        </div>
+        <span class="xl:text-base lg:text-xs md:text-[8px] text-[6px]">Body text for your whole article or post.</span>
+        <button class="w-fit xl:px-8 lg:px-4 px-2 xl:py-2.5 lg:py-1.5 py-0.5 xl:text-base lg:text-xs md:text-[8px] text-[6px] rounded text-white bg-[#E83223] font-bold">Button</button>
+      </div>
+      <div class="2xl:w-[170px] xl:w-[150px] lg:w-[120px] w-[80px] 2xl:h-[170px] xl:h-[150px] lg:h-[120px] h-[80px] bg-[#E83223] rounded absolute 2xl:-bottom-[45px] xl:-bottom-[35px] lg:-bottom-[30px] sm:-bottom-[20px] -bottom-[15px] 2xl:right-[60px] sm:right-[30px] right-[15px]"></div>
+    </div>
+  </div>
+</div>

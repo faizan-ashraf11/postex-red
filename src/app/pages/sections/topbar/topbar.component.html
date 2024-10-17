@@ -1,0 +1,90 @@
+<div class="flex flex-row gap-2.5 justify-between xl:px-[120px] px-3 lg:px-20 py-2.5 bg-[#F5F5F5]">
+  <div class="flex flex-row lg:gap-2 gap-0.5">
+    <span class="material-symbols-outlined sm:hidden flex hover:cursor-pointer" (click)="isVisible = true;">
+      menu
+    </span>
+    <button class="lg:py-1.5 py-0.5 lg:px-4 px-2 rounded bg-[#E83223] text-[#F5F5F5] lg:text-xs text-[10px] sm:flex hidden">Personal</button>
+    <div class="py-1 px-2.5 xl:text-xs lg:text-xs text-[10px] text-[#1E1E1E] font-semibold sm:flex hidden  hover:cursor-pointer">
+      Small Buisness
+    </div>
+    <div class="py-1 px-2.5 xl:text-xs lg:text-xs text-[10px] text-[#1E1E1E] font-semibold sm:flex hidden  hover:cursor-pointer">
+      Commercial
+    </div>
+  </div>
+  <div class="flex flex-row lg:gap-2 xs:gap-0.5 gap-2 items-center">
+    <div class="lg:w-[62px] xs:w-[40px] w-fit h-6 flex items-center justify-center xl:text-xs xs:text-[10px] text-[8px] font-semibold  hover:cursor-pointer">
+      Support
+    </div>
+    <div class="lg:w-[62px] xs:w-[40px] w-fit h-6 flex items-center justify-center xl:text-xs xs:text-[10px] text-[8px] font-semibold  hover:cursor-pointer">
+      Shop
+    </div>
+    <div class="lg:w-[90px] xs:w-[70px] w-fit h-6 flex items-center justify-center xl:text-xs xs:text-[10px] text-[8px] font-semibold  hover:cursor-pointer">
+      Our Company
+    </div>
+    <hr class="rotate-90 w-6 border-[#C0C0C0] xs:border-2 border">
+    <div class="lg:w-[90px] xs:w-[70px] w-fit h-6 flex flex-row gap-1 items-center justify-center xl:text-xs xs:text-xs text-[8px] font-semibold  hover:cursor-pointer">
+      <span class="material-symbols-outlined xs:text-base text-xs">
+        public
+      </span>
+      Eng
+    </div>
+    <button class="rounded xl:text-xs xs:text-xs text-[8px] flex flex-row gap-1 justify-center items-center lg:w-[72px] xs:w-[50px] w-fit xs:px-0 px-1 xs:h-6 py-1 font-semibold border border-[#1E1E1E]">
+      Signin
+    </button>
+  </div>
+</div>
+<nz-drawer
+      [nzClosable]="false"
+      [nzVisible]="isVisible"
+      nzPlacement="left"
+      (nzOnClose)="isVisible = false"
+      [nzMaskClosable]="true"
+      [nzWidth]="widthSet"
+    >
+      <ng-container *nzDrawerContent>
+        <div class="flex flex-row justify-between">
+          <img src="../../../assets/postexMicro.png" alt="" class="w-[120px] h-[40px] pb-2">
+          <span class="material-symbols-outlined text-base hover:cursor-pointer" (click)="isVisible = false;">
+            close
+          </span>
+        </div>
+        <div class="flex flex-col gap-3">
+          <div class="py-1 px-2.5 text-sm text-[#1E1E1E] font-semibold justify-between items-center flex">
+            Small Buisness
+            <span class="material-symbols-outlined">
+              arrow_right
+            </span>
+          </div>
+          <div class="py-1 px-2.5 text-sm text-[#1E1E1E] font-semibold justify-between items-center flex">
+            Commercial
+            <span class="material-symbols-outlined">
+              arrow_right
+            </span>
+          </div>
+          <div class="py-1 px-2.5 text-sm text-[#1E1E1E] font-semibold justify-between items-center flex">
+            Shipping
+            <span class="material-symbols-outlined">
+              arrow_drop_down
+            </span>
+          </div>
+          <div class="py-1 px-2.5 text-sm text-[#1E1E1E] font-semibold justify-between items-center flex">
+            Returns
+            <span class="material-symbols-outlined">
+              arrow_drop_down
+            </span>
+          </div>
+          <div class="py-1 px-2.5 text-sm text-[#1E1E1E] font-semibold justify-between items-center flex">
+            Postal Services
+            <span class="material-symbols-outlined">
+              arrow_drop_down
+            </span>
+          </div>
+          <div class="py-1 px-2.5 text-sm text-[#1E1E1E] font-semibold justify-between items-center flex">
+            Solutions
+            <span class="material-symbols-outlined">
+              arrow_drop_down
+            </span>
+          </div>
+        </div>
+      </ng-container>
+</nz-drawer>

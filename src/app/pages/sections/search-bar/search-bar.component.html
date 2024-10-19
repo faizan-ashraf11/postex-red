@@ -1,26 +1,26 @@
 <div class="flex flex-row justify-between items-center bg-[#FFFFFF] xl:px-[120px] px-3 lg:px-20 lg:py-2.5 py-1.5">
   <div class="flex flex-row gap-10 items-center">
-    <img src="../../../assets/postexMicro.png" alt="" class="xl:!w-[100px] lg:w-[80px] w-[70px] xl:!h-[36px] lg:h-[30px] h-[25px]">
+    <img src="../../../../assets/postexLogo.png" alt="" class="!w-[90px] !h-[24px]">
     <div class="flex flex-row gap-4">
-      <button class="text-[#1E1E1E] sm:flex hidden justify-center items-center font-semibold xl:text-base lg:text-xs text-[10px]">
+      <button nz-dropdown [nzDropdownMenu]="menu" class="text-[#1E1E1E] sm:flex hidden justify-center items-center font-semibold text-[14px] hover:text-[#E83223]">
         Shipping
         <span class="material-symbols-outlined">
           arrow_drop_down
         </span>
       </button>
-      <button class="text-[#1E1E1E] sm:flex hidden justify-center items-center font-semibold xl:text-base lg:text-xs text-[10px]">
+      <button nz-dropdown [nzDropdownMenu]="menu" class="text-[#1E1E1E] sm:flex hidden justify-center items-center font-semibold text-[14px] hover:text-[#E83223]">
         Returns
         <span class="material-symbols-outlined">
           arrow_drop_down
         </span>
       </button>
-      <button class="text-[#1E1E1E] sm:flex hidden justify-center items-center font-semibold xl:text-base lg:text-xs text-[10px]">
+      <button nz-dropdown [nzDropdownMenu]="menu" class="text-[#1E1E1E] sm:flex hidden justify-center items-center font-semibold text-[14px] hover:text-[#E83223]">
         Postal Services
         <span class="material-symbols-outlined">
           arrow_drop_down
         </span>
       </button>
-      <button class="text-[#1E1E1E] sm:flex hidden justify-center items-center font-semibold xl:text-base lg:text-xs text-[10px]">
+      <button nz-dropdown [nzDropdownMenu]="menu" class="text-[#1E1E1E] sm:flex hidden justify-center items-center font-semibold text-[14px] hover:text-[#E83223]">
         Solutions
         <span class="material-symbols-outlined">
           arrow_drop_down
@@ -28,10 +28,18 @@
       </button>
     </div>
   </div>
-  <div class="flex flex-row xl:w-[360px] lg:w-[250px] w-[150px] md:h-9 h-full relative">
-    <input type="text" name="" id="" class="w-full bg-[#F5F5F5] px-3 lg:py-1.5 py-0.5 rounded-full border border-[#E3DFDF] search md:h-full h-[25px] md:text-base text-[10px]" placeholder="Search">
-    <span class="material-symbols-outlined xl:text-base text-sm absolute text-[#1E1E1E] md:right-4 right-2 xl:top-1.5 md:top-2 top-0.5">
+  <div class="flex flex-row w-[360px] h-9 relative">
+    <input type="text" name="" id="" class="w-full bg-[#F5F5F5] pl-3 pr-9 py-1.5 rounded-full border border-[#E3DFDF] search md:h-full h-[25px] text-base" placeholder="Search">
+    <span class="material-symbols-outlined text-base absolute text-[#1E1E1E] right-4 top-1.5">
       search
     </span>
   </div>
 </div>
+<nz-dropdown-menu #menu="nzDropdownMenu">
+  <ul nz-menu nzSelectable class="px-5 py-2">
+    <li nz-menu-item>Option 1</li>
+    <li nz-menu-item>Option 2</li>
+    <li nz-menu-item>Option 3</li>
+    <li nz-menu-item nzDanger>Danger Option</li>
+  </ul>
+</nz-dropdown-menu>

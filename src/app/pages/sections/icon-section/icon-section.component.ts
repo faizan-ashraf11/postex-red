@@ -9,29 +9,29 @@ export class IconSectionComponent implements OnInit {
 
   row1Icon: any[] = [
     {
-      iconName: "qr_code_scanner",
+      iconName: "postage-stamp.png",
       iconText: "Find Postal Code"
     },
     {
-      iconName: "calculate",
+      iconName: "calculator-variant.png",
       iconText: "Find Rate"
     },
     {
-      iconName: "location_on",
+      iconName: "map-marker-question.png",
       iconText: "Locate Us"
     }
   ]
   row2Icon: any[] = [
     {
-      iconName: "calendar_month",
+      iconName: "book-clock-outline.png",
       iconText: "Schedule Pickup"
     },
     {
-      iconName: "calendar_today",
+      iconName: "storefront-outline.png",
       iconText: "E-com Login"
     },
     {
-      iconName: "support_agent",
+      iconName: "face-agent.png",
       iconText: "Contact Us"
     },
   ]

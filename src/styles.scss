@@ -3,3 +3,6 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
+.ant-dropdown-menu-item, .ant-dropdown-menu-submenu-title{
+  padding: 5px 20px !important;
+}

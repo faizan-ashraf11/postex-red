@@ -18,6 +18,8 @@ import { TitleSectionComponent } from './pages/sections/title-section/title-sect
 import { ImageSectionComponent } from './pages/sections/image-section/image-section.component';
 import { FooterComponent } from './pages/sections/footer/footer.component';
 import { NzDrawerModule } from 'ng-zorro-antd/drawer';
+import { NzDropDownModule } from 'ng-zorro-antd/dropdown';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -37,7 +39,9 @@ import { NzDrawerModule } from 'ng-zorro-antd/drawer';
     CommonModule,
     FormsModule,
     AppRoutingModule,
-    NzDrawerModule
+    NzDrawerModule,
+    NzDropDownModule,
+    BrowserAnimationsModule
   ],
   providers: [
     { provide: NZ_I18N, useValue: en_US }

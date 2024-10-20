@@ -1,3 +1,9 @@
 .calcWidthTrack{
   width: calc(100% - 120px);
 }
+
+@media (min-width: 1040px) and (max-width: 1290px) {
+  .bottomSettlement {
+    bottom: -12.7% !important;
+  }
+}

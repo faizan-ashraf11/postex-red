@@ -1,9 +1,27 @@
-.calcWidthTrack{
-  width: calc(100% - 120px);
-}
-
 @media (min-width: 1040px) and (max-width: 1290px) {
   .bottomSettlement {
     bottom: -12.7% !important;
   }
+}
+
+@media (max-width:1290px) {
+  .bottomSettlement {
+    bottom: -12.8% !important;
+  }
+}
+
+@media (min-width:1280px) {
+  .calcWidthTrack{
+    width: calc(100% - 120px) !important;
+  }
+}
+
+@media (min-width:480px) and (max-width: 1279px) {
+  .calcWidthTrack{
+    width: calc(100% - 80px) !important;
+  }
+}
+
+.calcWidthTrack{
+  width: 100%;
 }

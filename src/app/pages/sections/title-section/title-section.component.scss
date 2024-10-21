@@ -1,0 +1,11 @@
+@media (max-width: 640px) {
+  div .widthSettlement {
+    width: 45% !important;
+  }
+}
+
+@media (min-width: 641px) {
+  div .widthSettlement {
+    width: 28%;
+  }
+}

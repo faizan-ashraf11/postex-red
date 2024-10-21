@@ -1,27 +1,27 @@
-<div class="flex flex-row gap-2.5 justify-between xl:px-[120px] px-3 lg:px-20 py-2.5 bg-[#F5F5F5]">
+<div class="flex flex-row gap-2.5 justify-between xl:px-[120px] sm:px-20 px-5 py-2.5 bg-[#F5F5F5]">
   <div class="flex flex-row lg:gap-2 gap-0.5 items-center">
-    <span class="material-symbols-outlined sm:hidden flex hover:cursor-pointer" (click)="isVisible = true;">
+    <span class="material-symbols-outlined lg:hidden flex hover:cursor-pointer" (click)="isVisible = true;">
       menu
     </span>
-    <button class="py-1.5 px-4 rounded bg-[#E83223] text-[#F5F5F5] text-xs flex hover:border-[#E83223] border-2 border-transparent hover:text-[#E83223] hover:bg-transparent hover:transition-all">Personal</button>
-    <div class="py-1 px-2.5 text-xs text-[#1E1E1E] font-semibold flex  hover:cursor-pointer hover:text-[#E83223]">
+    <button class="py-1.5 px-4 rounded bg-[#E83223] text-[#F5F5F5] text-xs lg:flex hidden hover:border-[#E83223] border-2 border-transparent hover:text-[#E83223] hover:bg-transparent hover:transition-all">Personal</button>
+    <div class="py-1 px-2.5 text-xs text-[#1E1E1E] font-semibold lg:flex hidden  hover:cursor-pointer hover:text-[#E83223]">
       Small Buisness
     </div>
-    <div class="py-1 px-2.5 text-xs text-[#1E1E1E] font-semibold flex  hover:cursor-pointer hover:text-[#E83223]">
+    <div class="py-1 px-2.5 text-xs text-[#1E1E1E] font-semibold lg:flex hidden  hover:cursor-pointer hover:text-[#E83223]">
       Commercial
     </div>
   </div>
   <div class="flex flex-row lg:gap-2 xs:gap-0.5 gap-2 items-center">
-    <div class="w-fit px-2 py-1.5 flex items-center justify-center text-xs font-semibold  hover:cursor-pointer hover:text-[#E83223]">
+    <div class="w-fit px-2 py-1.5 xs:flex hidden items-center justify-center text-xs font-semibold  hover:cursor-pointer hover:text-[#E83223]">
       Support
     </div>
-    <div class="w-fit px-2 py-1.5 flex items-center justify-center text-xs font-semibold  hover:cursor-pointer hover:text-[#E83223]">
+    <div class="w-fit px-2 py-1.5 xs:flex hidden items-center justify-center text-xs font-semibold  hover:cursor-pointer hover:text-[#E83223]">
       Shop
     </div>
-    <div class="w-fit px-2 py-1.5 flex items-center justify-center text-xs font-semibold  hover:cursor-pointer hover:text-[#E83223]">
+    <div class="w-fit px-2 py-1.5 xs:flex hidden items-center justify-center text-xs font-semibold  hover:cursor-pointer hover:text-[#E83223]">
       Our Company
     </div>
-    <hr class="rotate-90 w-6 border-[#C0C0C0] xs:border-2 border">
+    <hr class="rotate-90 w-6 border-[#C0C0C0] xs:border-2 border xs:flex hidden">
     <div class="w-fit px-4 py-1 flex flex-row gap-1 items-center justify-center text-xs font-semibold  hover:cursor-pointer hover:text-[#E83223]">
       <span class="material-symbols-outlined text-base">
         public
@@ -45,49 +45,70 @@
       [nzWidth]="widthSet"
     >
       <ng-container *nzDrawerContent>
-        <div class="flex flex-row justify-between">
-          <img src="../../../assets/postexMicro.png" alt="" class="w-[120px] h-[40px] pb-2">
+        <div class="flex flex-row justify-between border-b pb-2 mb-2">
+          <img src="../../../../assets/postexLogo.png" alt="" class="!w-[90px] !h-[30px] p-2">
           <span class="material-symbols-outlined text-base hover:cursor-pointer" (click)="isVisible = false;">
             close
           </span>
         </div>
-        <div class="flex flex-col gap-3">
-          <div class="py-1 px-2.5 text-sm text-[#1E1E1E] font-semibold justify-between items-center flex">
-            Small Buisness
-            <span class="material-symbols-outlined">
-              arrow_right
-            </span>
+        <div class="flex flex-col py-4 gap-6 justify-between h-full">
+          <div class="flex flex-col gap-3">
+            <div class="py-1 px-2.5 text-sm text-[#1E1E1E] font-semibold justify-between items-center flex">
+              Small Buisness
+              <span class="material-symbols-outlined">
+                arrow_right
+              </span>
+            </div>
+            <div class="py-1 px-2.5 text-sm text-[#1E1E1E] font-semibold justify-between items-center flex">
+              Commercial
+              <span class="material-symbols-outlined">
+                arrow_right
+              </span>
+            </div>
+            <div class="py-1 px-2.5 text-sm text-[#1E1E1E] font-semibold justify-between items-center flex">
+              Shipping
+              <span class="material-symbols-outlined">
+                arrow_drop_down
+              </span>
+            </div>
+            <div class="py-1 px-2.5 text-sm text-[#1E1E1E] font-semibold justify-between items-center flex">
+              Returns
+              <span class="material-symbols-outlined">
+                arrow_drop_down
+              </span>
+            </div>
+            <div class="py-1 px-2.5 text-sm text-[#1E1E1E] font-semibold justify-between items-center flex">
+              Postal Services
+              <span class="material-symbols-outlined">
+                arrow_drop_down
+              </span>
+            </div>
+            <div class="py-1 px-2.5 text-sm text-[#1E1E1E] font-semibold justify-between items-center flex">
+              Solutions
+              <span class="material-symbols-outlined">
+                arrow_drop_down
+              </span>
+            </div>
+            <div class="py-1 px-2.5 text-sm text-[#1E1E1E] font-semibold justify-between items-center flex xs:hidden">
+              Support
+              <span class="material-symbols-outlined">
+                arrow_right
+              </span>
+            </div>
+            <div class="py-1 px-2.5 text-sm text-[#1E1E1E] font-semibold justify-between items-center flex xs:hidden">
+              Shop
+              <span class="material-symbols-outlined">
+                arrow_right
+              </span>
+            </div>
+            <div class="py-1 px-2.5 text-sm text-[#1E1E1E] font-semibold justify-between items-center flex xs:hidden">
+              Our Company
+              <span class="material-symbols-outlined">
+                arrow_right
+              </span>
+            </div>
           </div>
-          <div class="py-1 px-2.5 text-sm text-[#1E1E1E] font-semibold justify-between items-center flex">
-            Commercial
-            <span class="material-symbols-outlined">
-              arrow_right
-            </span>
-          </div>
-          <div class="py-1 px-2.5 text-sm text-[#1E1E1E] font-semibold justify-between items-center flex">
-            Shipping
-            <span class="material-symbols-outlined">
-              arrow_drop_down
-            </span>
-          </div>
-          <div class="py-1 px-2.5 text-sm text-[#1E1E1E] font-semibold justify-between items-center flex">
-            Returns
-            <span class="material-symbols-outlined">
-              arrow_drop_down
-            </span>
-          </div>
-          <div class="py-1 px-2.5 text-sm text-[#1E1E1E] font-semibold justify-between items-center flex">
-            Postal Services
-            <span class="material-symbols-outlined">
-              arrow_drop_down
-            </span>
-          </div>
-          <div class="py-1 px-2.5 text-sm text-[#1E1E1E] font-semibold justify-between items-center flex">
-            Solutions
-            <span class="material-symbols-outlined">
-              arrow_drop_down
-            </span>
-          </div>
+          <button class="py-1.5 rounded bg-[#E83223] text-[#F5F5F5] text-xs justify-center flex w-full hover:border-[#E83223] border-2 border-transparent hover:text-[#E83223] hover:bg-transparent hover:transition-all">Personal</button>
         </div>
       </ng-container>
 </nz-drawer>
